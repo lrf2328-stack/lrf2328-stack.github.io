@@ -1,0 +1,49 @@
+/*base*/
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkseagreen;
+    line-height: 1.5;
+    padding: 0 24px 40px;
+}
+/*Nav bar written by had as it is in the lesson and refining css playground lab 2  yes I typed all this out*/
+.navbar{
+    display: flex;
+    justify-content: space-between;/*this give space between the links and the logo keeping the "logo" right now just a name to the left and moving the links to the right*/
+    align-items: center;/*vertically centers the links and logo*/
+    padding: 16px 24px;
+    background: rgb(3, 60, 47);
+    color: darkseagreen;
+}
+.navlinks{/*cleaning up the links and styling them*/
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navlinks a{
+    color: darkseagreen;
+    text-decoration: none;
+}
+/*Centered hero*/
+.hero{
+    display: flex;
+    justify-content: center;/*horizontal center  justify-content is horizontal*/
+    align-items: center;/*same as above*/
+    min-height: 300px;/*adds hight and cleans space around the hero*/
+    background:rgb(3, 60, 47) ;
+}
+/*Responsive card row */
+.card-row{
+   display: flex; 
+   flex-wrap: wrap; /*drops rows on smaller screens*/
+   gap: 24px;
+   justify-content: center;
+}
+.card{
+    flex: 1 1 240px;/*allows cards to resize*/
+    background: rgb(3, 60, 47);
+    padding: 24px;
+    border-radius:12px ;
+}
